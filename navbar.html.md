@@ -14,7 +14,7 @@
 
 <a href="index.real.html" target="right">Index</a>
 
-<a href="Security issues of Supybot" target="right">Security issues of Supybot</a>
+<a href="Supybot.html" target="right">Security issues of Supybot</a>
 
 <!-- **Off-site links** -->
 
