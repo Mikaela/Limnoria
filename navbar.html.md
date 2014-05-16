@@ -10,7 +10,10 @@
 <link rel="stylesheet" type="text/css" href="css.css" />
 </head>
 <body>
-**On-site links**
+
+**Pages**
+
+On-site links
 
 <a href="index.real.html" target="right">Index</a>
 
