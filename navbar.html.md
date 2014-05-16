@@ -19,6 +19,8 @@ On-site links
 
 <a href="Supybot.html" target="right">Security issues of Supybot</a>
 
+<a href="http://lakka.kapsi.fi:62291/" target="right">Yvzabevn (my bot)</a>
+
 <!-- **Off-site links** -->
 
 </body>
