@@ -5,7 +5,7 @@
 <!-- <meta http-equiv="refresh" content="60" /> -->
 <meta name="description" content="Insert description here" />
 <meta name="author" content="Mikaela Suomalainen" />
-<link rel="canonical" href="https://">
+<link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
 <title>The real index (not-iframe)</title>
 <link rel="stylesheet" type="text/css" href="css.css" />
 </head>

@@ -5,7 +5,7 @@
 <meta name="description" content="Supybot security issues," />
 <meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC" />
 <meta name="author" content="Mikaela Suomalainen" />
-<link rel="canonical" href="https://mkaysi.github.io/Limnoria/Supybot.html">
+<link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
 <title>Security issues of Supybot</title>
 <link rel="stylesheet" type="text/css" href="css.css" />
 </head>

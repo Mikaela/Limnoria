@@ -5,7 +5,7 @@
 <!-- <meta http-equiv="refresh" content="60" /> -->
 <meta name="description" content="Navigation panel" />
 <meta name="author" content="Mikaela Suomalainen" />
-<link rel="canonical" href="https://mkaysi.github.io/Limnoria/navbar.html">
+<link rel="canonical" href="https://mkaysi.github.io/limnoria/navbar.html">
 <title>Navigation bar</title>
 <link rel="stylesheet" type="text/css" href="css.css" />
 </head>
