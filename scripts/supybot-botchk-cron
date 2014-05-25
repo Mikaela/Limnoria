@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+## This script executes supybot-botchk and sets correct environment.
+
+## Example entries for crontab:
+#*/5 * * * * /home/YOURUSERNAME/.local/bin/supybot-botchk-cron
+#*/5 * * * * /home/users/YOURUSERNAME/.local/bin/supybot-botchk-cron
+
+## Making sure that we use UTF-8.
+export LC_ALL=en_US.utf8
+
+## This sets timezone which the bot will use. UTC is probably sane default.
+export TZ="/usr/share/zoneinfo/Europe/UTC"
+
+## Setting $PATH correctly so executing system commands work.
+## The easiest way to get this correct is probably to execute the command 
+## below
+#echo export PATH=$PATH
+export PATH=
+
+## Fill the paths with correct details:
+export SB_BC_C_SUPYBOT_BOTCHK=
+export SB_BC_C_BOTDIR=
+export SB_BC_C_PIDFILE=
+export SB_BC_C_SUPYBOT=
+export SB_BC_C_CONFFILE=
+
+## You don't need to change this line, everything is set above.
+$SB_BC_C_SUPYBOT_BOTCHK --botdir=$SB_BC_C_BOTDIR --pidfile=$SB_BC_C_PIDFILE --supybot=$SB_BC_C_SUPYBOT --conffile=$SB_BC_C_CONFFILE $1
+
+## Debugging this supybot-botchk with this script: run 
+## "supybot-botchk-cron --verbose"
+
+## vim : set ft=sh : 
