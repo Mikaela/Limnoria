@@ -17,7 +17,7 @@ export TZ="/usr/share/zoneinfo/UTC"
 #echo export PATH=$PATH
 export PATH=
 
-## Fill the paths with correct details:
+## Put the FULL paths below.
 export SB_BC_C_SUPYBOT_BOTCHK=
 export SB_BC_C_BOTDIR=
 export SB_BC_C_PIDFILE=
@@ -27,7 +27,7 @@ export SB_BC_C_CONFFILE=
 ## You don't need to change this line, everything is set above.
 $SB_BC_C_SUPYBOT_BOTCHK --botdir=$SB_BC_C_BOTDIR --pidfile=$SB_BC_C_PIDFILE --supybot=$SB_BC_C_SUPYBOT --conffile=$SB_BC_C_CONFFILE $1
 
-## Debugging this supybot-botchk with this script: run 
-## "supybot-botchk-cron --verbose"
+## To debug this script, add --verbose to the end while running in
+## terminal.
 
 ## vim : set ft=sh : 
