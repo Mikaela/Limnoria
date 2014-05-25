@@ -9,7 +9,7 @@
 export LC_ALL=en_US.utf8
 
 ## This sets timezone which the bot will use. UTC is probably sane default.
-export TZ="/usr/share/zoneinfo/Europe/UTC"
+export TZ="/usr/share/zoneinfo/UTC"
 
 ## Setting $PATH correctly so executing system commands work.
 ## The easiest way to get this correct is probably to execute the command 
