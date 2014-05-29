@@ -2,8 +2,8 @@
 ## This script executes supybot-botchk and sets correct environment.
 
 ## Example entries for crontab:
-#*/5 * * * * /home/YOURUSERNAME/.local/bin/supybot-botchk-cron
-#*/5 * * * * /home/users/YOURUSERNAME/.local/bin/supybot-botchk-cron
+#*/5 * * * * /usr/bin/env -i /home/YOURUSERNAME/.local/bin/supybot-botchk-cron
+#*/5 * * * * /usr/bin/env -i /home/users/YOURUSERNAME/.local/bin/supybot-botchk-cron
 
 ## Making sure that we use UTF-8.
 export LC_ALL=en_US.utf8
