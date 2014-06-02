@@ -9,24 +9,24 @@ Security issues of Supybot
 </head>
 <body>
 
-<h1 id="latest-version-of-supybot-was-released-in-2005">Latest version of Supybot was released in 2005</h1>
-<p>All activity happens in git repository of Supybot nowadays and it happens seldomly. The version, which was released in 2005 is 0.83.4.1.</p>
+<h2 id="latest-version-of-supybot-was-released-in-2009">Latest version of Supybot was released in 2009</h2>
+<p>All activity happens in git repository of Supybot nowadays and it happens seldomly. The version, which was released in 2009 is 0.83.4.1.</p>
 <p>It's available from <a href="http://supybot.sf.net/">SourceForge</a>, Debian repositories, Ubuntu repositories and repositories of many other Linux distributions.</p>
-<h1 id="has-critical-issues">0.83.4.1 has critical issues</h1>
+<h2 id="has-critical-issues">0.83.4.1 has critical issues</h2>
 <p>What issues?</p>
-<h2 id="anyone-can-crash-it-and-computer-where-its-running-on">1. Anyone can crash it and computer where it's running on</h2>
+<h3 id="anyone-can-crash-it-and-computer-where-its-running-on">1. Anyone can crash it and computer where it's running on</h3>
 <p>And this is very easy. Just run the command</p>
 <pre><code>!misc last --regexp m/(.*\w){512}/</code></pre>
 <p>where ! is the prefix character.</p>
 <p>Misc is loaded by default and cannot be unloaded without modifying the config.</p>
-<h2 id="the-previous-wasnt-the-only-way-to-do-this">2. The previous wasn't the only way to do this</h2>
+<h3 id="the-previous-wasnt-the-only-way-to-do-this">2. The previous wasn't the only way to do this</h3>
 <p>Everyone can also make the bot count an equation, which brings it and the host computer down.</p>
 <p>For example:</p>
 <pre><code>!math calc factorial(999999)</code></pre>
-<h2 id="anyone-can-access-network-services-via-the-bot.">3. Anyone can access network services via the bot.</h2>
+<h3 id="anyone-can-access-network-services-via-the-bot.">3. Anyone can access network services via the bot.</h3>
 <p>I don't have example command for this, but it happens by nesting &quot;format cut&quot; and &quot;misc tell&quot;.</p>
 <p>What does this mean? Anyone can tell the bot to ghost someone else on same account, take over a channel by telling the bot to give flags (if it has correct flags), change password of the account and everything else what you do with network services.</p>
-<h2 id="web-page-with-special-characters-in-title-can-be-used-to-send-dccctcp-commands.">4. Web page with special characters in title can be used to send DCC/CTCP commands.</h2>
+<h3 id="web-page-with-special-characters-in-title-can-be-used-to-send-dccctcp-commands.">4. Web page with special characters in title can be used to send DCC/CTCP commands.</h3>
 <p>This doesn't mean only things like CTCP actions (also known as /me), but known problems with old routers ( FF ? DCC SEND “ff???f??????????????” 0 0 0 ) which make them reconnect to the internet.</p>
 <p>Usage:</p>
 <pre><code>!web title &lt;malicious.page.here&gt;

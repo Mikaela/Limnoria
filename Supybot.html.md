@@ -11,19 +11,19 @@
 </head>
 <body>
 
-# Latest version of Supybot was released in 2005
+## Latest version of Supybot was released in 2009
 
-All activity happens in git repository of Supybot nowadays and it happens seldomly. The version, which was released in 2005 is 0.83.4.1. 
+All activity happens in git repository of Supybot nowadays and it happens seldomly. The version, which was released in 2009 is 0.83.4.1. 
 
 It's available from [SourceForge], Debian repositories, Ubuntu repositories and repositories of many other Linux distributions.
 
 [SourceForge]:http://supybot.sf.net/
 
-# 0.83.4.1 has critical issues
+## 0.83.4.1 has critical issues
 
 What issues?
 
-## 1. Anyone can crash it and computer where it's running on
+### 1. Anyone can crash it and computer where it's running on
 
 And this is very easy. Just run the command 
 
@@ -35,7 +35,7 @@ where ! is the prefix character.
 
 Misc is loaded by default and cannot be unloaded without modifying the config.
 
-## 2. The previous wasn't the only way to do this
+### 2. The previous wasn't the only way to do this
 
 Everyone can also make the bot count an equation, which brings it and the host computer down. 
 
@@ -45,13 +45,13 @@ For example:
 !math calc factorial(999999)
 ```
 
-## 3. Anyone can access network services via the bot.
+### 3. Anyone can access network services via the bot.
 
 I don't have example command for this, but it happens by nesting "format cut" and "misc tell". 
 
 What does this mean? Anyone can tell the bot to ghost someone else on same account, take over a channel by telling the bot to give flags (if it has correct flags), change password of the account and everything else what you do with network services.
 
-## 4. Web page with special characters in title can be used to send DCC/CTCP commands.
+### 4. Web page with special characters in title can be used to send DCC/CTCP commands.
 
 This doesn't mean only things like CTCP actions (also known as /me), but known problems with old routers ( FF ? DCC SEND “ff???f??????????????” 0 0 0 ) which make 
 them reconnect to the internet.
@@ -104,7 +104,7 @@ The links above should always be the latest version of Limnoria and they are upd
 [stable version of Limnoria here]:http://builds.progval.net/limnoria/limnoria-master-HEAD.deb
 [testing version here]:http://builds.progval.net/limnoria/limnoria-testing-HEAD.deb
 
-[Gribble modifications when compared to Supybot.]	
+[Gribble modifications when compared to Supybot.]   
 
 [Limnoria modifications when compared to Gribble.] Features of Gribble have been fully merged to Limnoria.
 
