@@ -1,0 +1,4 @@
+gems:
+    - jekyll-sitemap
+sitemap:
+    file: "/sitemap.xml"
