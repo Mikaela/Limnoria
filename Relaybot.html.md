@@ -38,6 +38,14 @@ Hostmask of RelayBot on 2014-06-23:
     cannot use it's primary nickname or networks cannot connect to it's 
     identd.
 
+## HexChat
+
+From the "Window" menu you can find "Ignore list". Click "Add" and add 
+one of the hostmasks mentioned above (the lower is recommended).
+
+Uncheck the other checkboxes than "Notice" and you can close the window 
+and you won't see spamming.
+
 ## Linkinus
 
 According to another person, there is a GUI where you can easily ignore 
