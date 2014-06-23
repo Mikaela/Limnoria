@@ -46,6 +46,14 @@ one of the hostmasks mentioned above (the lower is recommended).
 Uncheck the other checkboxes than "Notice" and you can close the window 
 and you won't see spamming.
 
+## KVIRC
+
+I am not primarily KVIRC user and I cannot say anything else than right 
+click RelayBot and select something that matches only RelayBot.
+
+**WARNING: KVIRC makes it very easy to also ignore pinkieval which you 
+don't want to do as they are author of Limnoria and help people often!**
+
 ## Linkinus
 
 According to another person, there is a GUI where you can easily ignore 
