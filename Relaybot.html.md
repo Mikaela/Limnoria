@@ -13,7 +13,7 @@
 <body>
 
 RelayBot is the bot which relays between #supybot at freenode and oftc. It 
-is currently using the [LinkRelay] plugin to do this.
+is currently using the [LinkRelay](https://github.com/ProgVal/Supybot-plugins/tree/master/LinkRelay) plugin to do this.
 
 It's sometimes considered as annoyance as it has lately mostly spammed 
 with join (part messages aren't working, because of a bug (2014-06-23)) 
@@ -25,10 +25,12 @@ everything as there are people whom should be heard at OFTC (mainly main
 Supybot developer).
 
 Related links:
+
 * [LinkRelay plugin](https://github.com/ProgVal/Supybot-plugins/tree/master/LinkRelay)
 * [Feature request for smart filtering of joins/quits/parts](https://github.com/ProgVal/Supybot-plugins/issues/66)
 
 Hostmask of RelayBot on 2014-06-23:
+
 * RelayBot!progval@pdpc/supporter/student/progval
     * This is absolute hostmask
 * RelayBot*!*@pdpc/supporter/student/progval
@@ -53,7 +55,7 @@ all notices from the nickname "RelayBot".
 <hr/>
 
 This page is very likely missing many IRC clients. Could you [open issues](https://github.com/mkaysi/limnoria/issues) 
-about how to do this with IRC clients that aren't mentioneed here?
+about how to do this with IRC clients that aren't mentioned here?
 
 <hr/>
 
