@@ -139,8 +139,8 @@ Supybot or gribble with the information below.
 If you don't have sudo, please simply remove it from beginnings of lines 
 and run the commands as root or Administrator.
 
-[pip]:
-[msysgit]:
+[pip]:http://pip.readthedocs.org/en/latest/reference/pip_install.html
+[msysgit]:https://msysgit.github.io/
 
 ### Supybot
 
