@@ -67,7 +67,8 @@ account, take over a channel by telling the bot to give flags
 (if it has correct flags), change password of the account and everything 
 else what you do with network services.
 
-### 4. Web page with special characters in <title> can be used to send DCC/CTCP commands.
+### 4. Web page with special characters in <title> can be used to send 
+DCC/CTCP commands.
 
 This doesn't mean only things like CTCP actions (also known as /me), 
 but known problems with old routers ( `FF ? DCC SEND “ff???f??????????????” 0 0 0` ) 
