@@ -55,6 +55,25 @@ Security issues of Supybot
 <p><a href="https://github.com/ProgVal/Limnoria/wiki/LGC">Limnoria modifications when compared to Gribble.</a> Features of Gribble have been fully merged to Limnoria.</p>
 <p>Your current botname.conf is <strong>100% compatible with forks</strong>.</p>
 <p><a href="irc://irc.freenode.net/#supybot,#gribble,#limnoria">Join Supybot channels on freenode!</a></p>
+<h2 id="installing-forks">Installing forks</h2>
+<h3 id="for-all-of-them.">For all of them.</h3>
+<p>You should install [pip] (usually python-pip in repositories) and [git].</p>
+<p>Windows users should also install [pip] and [msysgit] and in [msysgit] select to run <strong>unix tools in PATH</strong>.</p>
+<p>Note: pip is included with Python =&lt; 3.4! Python 3 is only supported by Limnoria.</p>
+<p>For <strong>rootless installation and upgrading</strong>, please see <a href="http://supybot.aperio.fr/doc/use/install.html#local-installation">Limnoria's documentation.</a> which you should be able to modify to install stock Supybot or gribble with the information below.</p>
+<p>If you don't have sudo, please simply remove it from beginnings of lines and run the commands as root or Administrator.</p>
+<p>[pip]: [msysgit]:</p>
+<h3 id="supybot">Supybot</h3>
+<p><strong>Not recommended as it's not actively developed.</strong></p>
+<pre><code>sudo pip install git+git://supybot.git.sourceforge.net/gitroot/gitroot/supybot/supybot</code></pre>
+<h3 id="gribble">gribble</h3>
+<p>Less actively developed than Limnoria and doesn't support Python 3.</p>
+<pre><code>sudo pip install git+git://gribble.git.sourceforge.net/gitroot/gribble/gribble</code></pre>
+<h3 id="limnoria">Limnoria</h3>
+<p>At the time of writing, the most active Supybot fork which includes embedded HTTPd for plugins needing it, supports other languages than English and also runs with Python 3.</p>
+<p>The first command installs requirements of Limnoria and the second Limnoria itself. Only Limnoria has requirements.txt file at the moment.</p>
+<pre><code>sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt
+sudo pip install git+https://github.com/ProgVal/Limnoria.git@master</code></pre>
 <p>[Changelog of this page.]</p>
 [Changelog of this page.]:https://github.com/Mkaysi/Limnoria/commits/gh-pages/Supybot.html
 <script>

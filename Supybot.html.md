@@ -120,6 +120,58 @@ Your current botname.conf is <strong>100% compatible with forks</strong>.
 [PluginDownloader]:https://github.com/ProgVal/Limnoria/tree/master/plugins/PluginDownloader
 [Join Supybot channels on freenode!]:irc://irc.freenode.net/#supybot,#gribble,#limnoria
 
+## Installing forks
+
+### For all of them.
+
+You should install [pip] (usually python-pip in repositories) and [git].
+
+Windows users should also install [pip] and [msysgit] and in [msysgit] 
+select to run **unix tools in PATH**.
+
+Note: pip is included with Python =< 3.4! Python 3 is only supported by 
+Limnoria.
+
+For **rootless installation and upgrading**, please see 
+[Limnoria's documentation.](http://supybot.aperio.fr/doc/use/install.html#local-installation) which you should be able to modify to install stock 
+Supybot or gribble with the information below.
+
+If you don't have sudo, please simply remove it from beginnings of lines 
+and run the commands as root or Administrator.
+
+[pip]:
+[msysgit]:
+
+### Supybot
+
+**Not recommended as it's not actively developed.**
+
+```
+sudo pip install git+git://supybot.git.sourceforge.net/gitroot/gitroot/supybot/supybot
+```
+
+### gribble
+
+Less actively developed than Limnoria and doesn't support Python 3.
+
+```
+sudo pip install git+git://gribble.git.sourceforge.net/gitroot/gribble/gribble
+```
+
+### Limnoria
+
+At the time of writing, the most active Supybot fork which includes 
+embedded HTTPd for plugins needing it, supports other languages than 
+English and also runs with Python 3.
+
+The first command installs requirements of Limnoria and the second 
+Limnoria itself. Only Limnoria has requirements.txt file at the moment.
+
+```
+sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt
+sudo pip install git+https://github.com/ProgVal/Limnoria.git@master
+```
+
 [Changelog of this page.]
 
 [Changelog of this page.]:https://github.com/Mkaysi/Limnoria/commits/gh-pages/Supybot.html
