@@ -112,20 +112,30 @@ There are also two active Supybot forks, known as [Limnoria] and
 [Gribble], which are actively developed and have fixed these issues. 
 If you want permanent solution, you should install either of them.
 
-I recommend [Limnoria], because it seems to be more active 
-(activity of [Gribble] isn't announced anywhere) and it has additional 
-commands, translations and new plugin called [PluginDownloader], which 
-makes installing of 3rd party plugins easy. 
+I recommend [Limnoria]
+* it seems to be more actively developed.
+    * (activity of [Gribble] isn't announced anywhere)
+* it has additional 
+    * commands
+    * translations support
+        * plugins
+            * [PluginDownloader], which makes installing of 
+            3rd party plugins easy.
+        * NickAuth
+            * Allows identifying to the bot using NickServ account.
+    * all changes of [Gribble].
+        * Conditional & MessageParser 
+* [Limnoria also supports SASL and CertFP], which are methods to 
+[identify to services automatically.](https://mkaysi.github.io/pages/external/identifying.html)
 
-Ohloh supports comparing different projects, [here is comparsion of Limnoria, Gribble and Supybot](https://www.ohloh.net/p/compare?project_0=Limnoria&project_1=Gribble%3A+Support+Bottie&project_2=Supybot).
+## Interesting things
 
-[Gribble modifications when compared to stock Supybot](https://sourceforge.net/p/gribble/wiki/Gribble_Project_Git_Repository/)
-
-**SourceForge and that link are a little broken, when they are moved 
-elsewhere, please remove this notice!**
-
-[Limnoria modifications when compared to Gribble.](https://github.com/ProgVal/Limnoria/wiki/LGC) 
-Features of Gribble are fully merged to Limnoria.
+* [Comparsion of commit activity between Limnoria, Gribble and Supybot](https://www.ohloh.net/p/compare?project_0=Limnoria&project_1=Gribble%3A+Support+Bottie&project_2=Supybot).
+* [Gribble's modifications to stock Supybot](https://sourceforge.net/p/gribble/wiki/Gribble_Project_Git_Repository/)
+    * SourceForge and that link are a little broken, when they are moved 
+    elsewhere, please remove this notice!
+* [Limnoria's modifications to Gribble.](https://github.com/ProgVal/Limnoria/wiki/LGC) 
+    * Features of Gribble are fully merged to Limnoria.
 
 Your current botname.conf is **100% compatible with forks**.
 
