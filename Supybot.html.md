@@ -147,7 +147,7 @@ and run the commands as root or Administrator.
 **Not recommended as it's not actively developed.**
 
 ```
-sudo pip install git+git://supybot.git.sourceforge.net/gitroot/gitroot/supybot/supybot
+sudo pip install git+https://github.com/supybot/supybot.git
 ```
 
 ### gribble
@@ -155,7 +155,7 @@ sudo pip install git+git://supybot.git.sourceforge.net/gitroot/gitroot/supybot/s
 Less actively developed than Limnoria and doesn't support Python 3.
 
 ```
-sudo pip install git+git://gribble.git.sourceforge.net/gitroot/gribble/gribble
+sudo pip install git+https://github.com/nanotube/supybot_fixes.git
 ```
 
 ### Limnoria
