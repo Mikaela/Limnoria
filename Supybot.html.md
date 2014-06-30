@@ -157,7 +157,7 @@ select to run **unix tools in PATH**.
 Note: pip is included with Python =< 3.4! Python 3 is only supported by 
 Limnoria.
 
-For **rootless installation and upgrading**, please see 
+For **rootless installation**, please see 
 [Limnoria's documentation.](http://supybot.aperio.fr/doc/use/install.html#local-installation) which you should be able to modify to install stock 
 Supybot or gribble with the information below.
 
@@ -173,7 +173,7 @@ and run the commands as root or Administrator.
 **Not recommended as it's not actively developed.**
 
 ```
-sudo pip install git+https://github.com/supybot/supybot.git
+sudo pip install git+https://github.com/supybot/supybot.git --upgrade
 ```
 
 ### gribble
@@ -181,7 +181,7 @@ sudo pip install git+https://github.com/supybot/supybot.git
 Less actively developed than Limnoria and doesn't support Python 3.
 
 ```
-sudo pip install git+https://github.com/nanotube/supybot_fixes.git
+sudo pip install git+https://github.com/nanotube/supybot_fixes.git --upgrade
 ```
 
 ### Limnoria
@@ -194,8 +194,8 @@ The first command installs requirements of Limnoria and the second
 Limnoria itself. Only Limnoria has requirements.txt file at the moment.
 
 ```
-sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt
-sudo pip install git+https://github.com/ProgVal/Limnoria.git@master
+sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
+sudo pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade
 ```
 
 <hr/>
