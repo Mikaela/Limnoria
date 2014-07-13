@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<meta name="description" content="Supybot security issues," />
-<meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC" />
+<meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." />
+<meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,pip," />
 <meta name="author" content="Mikaela Suomalainen" />
 <link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
 <title>Security issues of Supybot</title>
