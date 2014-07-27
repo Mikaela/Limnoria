@@ -130,7 +130,7 @@ I recommend [Limnoria]
 
 ## Interesting things
 
-* [Comparsion of commit activity between Limnoria, Gribble and Supybot](https://www.ohloh.net/p/compare?project_0=Limnoria&project_1=Gribble%3A+Support+Bottie&project_2=Supybot).
+* [Comparsion of commit activity between Limnoria, Gribble and Supybot](https://www.openhub.net/p/compare?project_0=Limnoria&project_1=Gribble%3A+Support+Bottie&project_2=Supybot).
 * [Gribble's modifications to stock Supybot](https://sourceforge.net/p/gribble/wiki/Gribble_Project_Git_Repository/)
     * SourceForge and that link are a little broken, when they are moved 
     elsewhere, please remove this notice!
