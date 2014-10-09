@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" /> <meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." /> <meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,pip," /> <meta name="author" content="Mikaela Suomalainen" /> <link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
+<meta charset="UTF-8" /> <meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." /> <meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,python -m pip," /> <meta name="author" content="Mikaela Suomalainen" /> <link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
 <title>
 Security issues of Supybot
 </title>
@@ -54,11 +54,11 @@ ga('send', 'pageview');
 <li><a href="ircs://chat.freenode.net:6697/#supybot">#supybot</a></li>
 </ul>
 <p>The first issue has been also used to take down some of <a href="https://wiki.ubuntu.com/IRC/Bots">Ubuntu IRC bots</a> several times. At least UbotX (I don't remember the number) and meetingology.</p>
-<p>Some of these issues are fixed in git repository, but most people aren't using it. If you wish to start using it, please scroll down to installation instructions lower this page even though <a href="https://github.com/ProgVal/Limnoria">Limnoria</a> and <a href="http://github.com/nanotube/supybot_fixed">gribble</a> are more recommended.</p>
+<p>Some of these issues are fixed in git repository, but most people aren't using it. If you wish to start using it, please scroll down to installation instructions lower this page even though <a href="https://github.com/ProgVal/Limnoria">Limnoria</a> and <a href="http://github.com/nanotube/supybot_fixes">gribble</a> are more recommended.</p>
 <h3 id="how-to-avoid-them">How to avoid them?</h3>
 <p>You can add anticapability for these commands using <code>owner defaultcapability</code>, but that is only a temporary solution. There can also be other issues.</p>
-<p>There are also two active Supybot forks, known as <a href="https://github.com/ProgVal/Limnoria">Limnoria</a> and <a href="http://github.com/nanotube/supybot_fixed">Gribble</a>, which are actively developed and have fixed these issues. If you want permanent solution, you should install either of them.</p>
-<p>I recommend <a href="https://github.com/ProgVal/Limnoria">Limnoria</a> * it seems to be more actively developed. * (activity of <a href="http://github.com/nanotube/supybot_fixed">Gribble</a> isn't announced anywhere) * it has additional * commands * translations support * plugins * <a href="https://github.com/ProgVal/Limnoria/tree/master/plugins/PluginDownloader">PluginDownloader</a>, which makes installing of 3rd party plugins easy. * NickAuth * Allows identifying to the bot using NickServ account. * all changes of <a href="http://github.com/nanotube/supybot_fixed">Gribble</a>. * Conditional &amp; MessageParser * [Limnoria also supports SASL and CertFP], which are methods to <a href="https://mkaysi.github.io/pages/external/identifying.html">identify to services automatically.</a></p>
+<p>There are also two active Supybot forks, known as <a href="https://github.com/ProgVal/Limnoria">Limnoria</a> and <a href="http://github.com/nanotube/supybot_fixes">Gribble</a>, which are actively developed and have fixed these issues. If you want permanent solution, you should install either of them.</p>
+<p>I recommend <a href="https://github.com/ProgVal/Limnoria">Limnoria</a> * it seems to be more actively developed. * (activity of <a href="http://github.com/nanotube/supybot_fixes">Gribble</a> isn't announced anywhere) * it has additional * commands * translations support * plugins * <a href="https://github.com/ProgVal/Limnoria/tree/master/plugins/PluginDownloader">PluginDownloader</a>, which makes installing of 3rd party plugins easy. * NickAuth * Allows identifying to the bot using NickServ account. * all changes of <a href="http://github.com/nanotube/supybot_fixes">Gribble</a>. * Conditional &amp; MessageParser * [Limnoria also supports SASL and CertFP], which are methods to <a href="https://mkaysi.github.io/pages/external/identifying.html">identify to services automatically.</a></p>
 <h2 id="interesting-things">Interesting things</h2>
 <ul class="incremental">
 <li><a href="https://www.openhub.net/p/compare?project_0=Limnoria&amp;project_1=Gribble%3A+Support+Bottie&amp;project_2=Supybot">Comparsion of commit activity between Limnoria, Gribble and Supybot</a>.</li>
@@ -75,22 +75,22 @@ ga('send', 'pageview');
 <p><a href="ircs://chat.freenode.net:6697/#supybot,#gribble,#limnoria">Join Supybot channels on freenode!</a></p>
 <h2 id="installing-forks">Installing forks</h2>
 <h3 id="for-all-of-them.">For all of them.</h3>
-<p>You should install <a href="http://pip.readthedocs.org/en/latest/reference/pip_install.html">pip</a> (usually python-pip in repositories) and <a href="http://git-scm.com/">git</a>.</p>
-<p>Windows users should also install <a href="http://pip.readthedocs.org/en/latest/reference/pip_install.html">pip</a> and <a href="https://msysgit.github.io/">msysgit</a> and in <a href="https://msysgit.github.io/">msysgit</a> select to run <strong>unix tools in PATH</strong>.</p>
-<p>Note: pip is included with Python =&lt; 3.4! Python 3 is only supported by Limnoria.</p>
+<p>You should install <a href="http://python%20-m%20pip.readthedocs.org/en/latest/reference/python%20-m%20pip_install.html">python -m pip</a> (usually python-python -m pip in repositories) and <a href="http://git-scm.com/">git</a>.</p>
+<p>Windows users should also install <a href="http://python%20-m%20pip.readthedocs.org/en/latest/reference/python%20-m%20pip_install.html">python -m pip</a> and <a href="https://msysgit.github.io/">msysgit</a> and in <a href="https://msysgit.github.io/">msysgit</a> select to run <strong>unix tools in PATH</strong>.</p>
+<p>Note: python -m pip is included with Python =&lt; 3.4! Python 3 is only supported by Limnoria.</p>
 <p>For <strong>rootless installation</strong>, please see <a href="http://supybot.aperio.fr/doc/use/install.html#local-installation">Limnoria's documentation.</a> which you should be able to modify to install stock Supybot or gribble with the information below.</p>
 <p>If you don't have sudo, please simply remove it from beginnings of lines and run the commands as root or Administrator.</p>
 <h3 id="supybot">Supybot</h3>
 <p><strong>Not recommended as it's not actively developed.</strong></p>
-<pre><code>sudo pip install git+https://github.com/supybot/supybot.git --upgrade</code></pre>
+<pre><code>sudo python -m pip install git+https://github.com/supybot/supybot.git --upgrade</code></pre>
 <h3 id="gribble">gribble</h3>
 <p>Less actively developed than Limnoria and doesn't support Python 3.</p>
-<pre><code>sudo pip install git+https://github.com/nanotube/supybot_fixes.git --upgrade</code></pre>
+<pre><code>sudo python -m pip install git+https://github.com/nanotube/supybot_fixes.git --upgrade</code></pre>
 <h3 id="limnoria">Limnoria</h3>
 <p>At the time of writing, the most active Supybot fork which includes embedded HTTPd for plugins needing it, supports other languages than English and also runs with Python 3.</p>
 <p>The first command installs requirements of Limnoria and the second Limnoria itself. Only Limnoria has requirements.txt file at the moment.</p>
-<pre><code>sudo pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
-sudo pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade</code></pre>
+<pre><code>sudo python -m pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
+sudo python -m pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade</code></pre>
 <hr/>
 <a href="https://github.com/Mkaysi/Limnoria/commits/gh-pages/Supybot.html">Changelog of this page.</a>
 <hr/>

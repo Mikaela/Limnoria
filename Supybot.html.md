@@ -142,7 +142,7 @@ Your current botname.conf is **100% compatible with forks**.
 [Join Supybot channels on freenode!](ircs://chat.freenode.net:6697/#supybot,#gribble,#limnoria)
 
 [Limnoria]:https://github.com/ProgVal/Limnoria
-[Gribble]:http://github.com/nanotube/supybot_fixed
+[Gribble]:http://github.com/nanotube/supybot_fixes
 [PluginDownloader]:https://github.com/ProgVal/Limnoria/tree/master/plugins/PluginDownloader
 
 ## Installing forks
