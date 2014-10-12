@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" /> <meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." /> <meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,python -m pip," /> <meta name="author" content="Mikaela Suomalainen" /> <link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
+<meta charset="UTF-8" /> <meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." /> <meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,pip," /> <meta name="author" content="Mikaela Suomalainen" /> <link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
 <title>
 Security issues of Supybot
 </title>
@@ -75,9 +75,9 @@ ga('send', 'pageview');
 <p><a href="ircs://chat.freenode.net:6697/#supybot,#gribble,#limnoria">Join Supybot channels on freenode!</a></p>
 <h2 id="installing-forks">Installing forks</h2>
 <h3 id="for-all-of-them.">For all of them.</h3>
-<p>You should install <a href="http://python%20-m%20pip.readthedocs.org/en/latest/reference/python%20-m%20pip_install.html">python -m pip</a> (usually python-python -m pip in repositories) and <a href="http://git-scm.com/">git</a>.</p>
-<p>Windows users should also install <a href="http://python%20-m%20pip.readthedocs.org/en/latest/reference/python%20-m%20pip_install.html">python -m pip</a> and <a href="https://msysgit.github.io/">msysgit</a> and in <a href="https://msysgit.github.io/">msysgit</a> select to run <strong>unix tools in PATH</strong>.</p>
-<p>Note: python -m pip is included with Python =&lt; 3.4! Python 3 is only supported by Limnoria.</p>
+<p>You should install <a href="http://pip.readthedocs.org/en/latest/reference/pythonpip_install.html">pip</a> (usually python-pip and python3-pip in repositories) and <a href="http://git-scm.com/">git</a>.</p>
+<p>Windows users should also install <a href="http://pip.readthedocs.org/en/latest/reference/pythonpip_install.html">pip</a> and <a href="https://msysgit.github.io/">msysgit</a> and in <a href="https://msysgit.github.io/">msysgit</a> select to run <strong>unix tools in PATH</strong>.</p>
+<p>Note: pip is included with Python =&lt; 3.4! Python 3 is only supported by Limnoria.</p>
 <p>For <strong>rootless installation</strong>, please see <a href="http://supybot.aperio.fr/doc/use/install.html#local-installation">Limnoria's documentation.</a> which you should be able to modify to install stock Supybot or gribble with the information below.</p>
 <p>If you don't have sudo, please simply remove it from beginnings of lines and run the commands as root or Administrator.</p>
 <h3 id="supybot">Supybot</h3>
@@ -89,8 +89,13 @@ ga('send', 'pageview');
 <h3 id="limnoria">Limnoria</h3>
 <p>At the time of writing, the most active Supybot fork which includes embedded HTTPd for plugins needing it, supports other languages than English and also runs with Python 3.</p>
 <p>The first command installs requirements of Limnoria and the second Limnoria itself. Only Limnoria has requirements.txt file at the moment.</p>
-<pre><code>sudo python -m pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
-sudo python -m pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade</code></pre>
+<pre><code>sudo python3 -m pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
+sudo python3 -m pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade</code></pre>
+<h4 id="python3--m-pip">python3 -m pip</h4>
+<p>If you don't have pip for Python3 you can</p>
+<pre><code>curl -LO https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py</code></pre>
+<p>if <code>curl -LO</code> doesn't work, try replacing it with <code>wget</code>.</p>
 <hr/>
 <a href="https://github.com/Mkaysi/Limnoria/commits/gh-pages/Supybot.html">Changelog of this page.</a>
 <hr/>

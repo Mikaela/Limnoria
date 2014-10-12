@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." />
-<meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,python -m pip," />
+<meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,pip," />
 <meta name="author" content="Mikaela Suomalainen" />
 <link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
 <title>Security issues of Supybot</title>
@@ -149,12 +149,13 @@ Your current botname.conf is **100% compatible with forks**.
 
 ### For all of them.
 
-You should install [python -m pip] (usually python-python -m pip in repositories) and [git].
+You should install [pip] (usually python-pip and python3-pip in
+repositories) and [git].
 
-Windows users should also install [python -m pip] and [msysgit] and in [msysgit] 
+Windows users should also install [pip] and [msysgit] and in [msysgit] 
 select to run **unix tools in PATH**.
 
-Note: python -m pip is included with Python =< 3.4! Python 3 is only supported by 
+Note: pip is included with Python =< 3.4! Python 3 is only supported by 
 Limnoria.
 
 For **rootless installation**, please see 
@@ -165,7 +166,7 @@ If you don't have sudo, please simply remove it from beginnings of lines
 and run the commands as root or Administrator.
 
 [git]:http://git-scm.com/
-[python -m pip]:http://python -m pip.readthedocs.org/en/latest/reference/python -m pip_install.html
+[pip]:http://pip.readthedocs.org/en/latest/reference/pythonpip_install.html
 [msysgit]:https://msysgit.github.io/
 
 ### Supybot
@@ -194,9 +195,20 @@ The first command installs requirements of Limnoria and the second
 Limnoria itself. Only Limnoria has requirements.txt file at the moment.
 
 ```
-sudo python -m pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
-sudo python -m pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade
+sudo python3 -m pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
+sudo python3 -m pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade
 ```
+
+#### python3 -m pip
+
+If you don't have pip for Python3 you can
+
+```
+curl -LO https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
+```
+
+if `curl -LO` doesn't work, try replacing it with `wget`.
 
 <hr/>
 [Changelog of this page.](https://github.com/Mkaysi/Limnoria/commits/gh-pages/Supybot.html)
