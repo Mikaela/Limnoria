@@ -1,40 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-/*    color: #FFA6A6;
-    background-color: #FFFFCC;*/
-    text-align: center
-}
-
 body {
-    color: #660066;
-    background-color: #CCFFFF;
-    font-family: "DejaVu Sans", Ubuntu, Arial, Arial, Helvetica, sans-serif;
-    text-align: justify-center
-}
-
-pre {
-    color: #FFFFFF;
-    background-color: #000000;
-    font-family: "Ubuntu Mono", "DejaVu Sans Mono", Courier, "Courier New";
-}
-
-
-a:link { 
-    /*color: #000000;*/
-    font-weight:bold
-}
-
-a:visited {
-   /* color: #FF0066;*/
-    font-weight:bold
-}
-
-img {
-    display: inherit;
-    margin-left: auto;
-    margin-right: auto
+    background-color: pink;
+    font-family: "Copperplate / Copperplate Gothic Light", sans-serif;
 }
