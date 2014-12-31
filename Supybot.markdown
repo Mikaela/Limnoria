@@ -195,8 +195,3 @@ sudo python3 get-pip.py
 ```
 
 if `curl -LO` doesn't work, try replacing it with `wget`.
-
-* * * * *
-
-[Changelog of this page.](https://github.com/Mikaela/limnoria/commits/gh-pages/Supybot.md)
-* * * * *
