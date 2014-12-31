@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-<meta name="description" content="Security issues in the latest released version of stock Supybot, how to avoid them without switching to a fork and how to switch to forks." />
-<meta name="keywords" content="Security,Issues,Supybot,crash,Debian,Ubuntu,IRC,Python,Python 2,Python 3,pip," />
-<meta name="author" content="Mikaela Suomalainen" />
-<link rel="canonical" href="https://mkaysi.github.io/limnoria/Supybot.html">
-<title>Security issues of Supybot</title>
-<link rel="stylesheet" type="text/css" href="css.css" />
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-40171169-1', 'mkaysi.github.io');
-ga('send', 'pageview');
-</script>
-</head>
-<body>
+---
+layout: page
+title: Security issues
+permalink: /Supybot.html
+---
 
 All activity happens in git repository of Supybot nowadays and it happens 
 seldomly. The latest version, which was released in 2009 is 0.83.4.1 
@@ -40,12 +25,12 @@ And this is very easy. Just run the command
 
 where ! is the prefix character.
 
-Misc is loaded by default and cannot be unloaded without modifying the 
+Misc is loaded by default and cannot be unloaded without modifying the
 config.
 
 ### 2. The previous wasn't the only way to do this
 
-Everyone can also make the bot count an equation, which brings it and the 
+Everyone can also make the bot count an equation, which brings it and the
 host computer down. 
 
 For example:
@@ -60,18 +45,19 @@ default.
 ### 3. Anyone can access network services via the bot.
 
 I don't have example command for this, but it happens by nesting 
-"format cut" and "misc tell". 
+"format cut" and "misc tell".
 
-What does this mean? Anyone can tell the bot to ghost someone else on same 
-account, take over a channel by telling the bot to give flags 
-(if it has correct flags), change password of the account and everything 
+What does this mean? Anyone can tell the bot to ghost someone else on same
+account, take over a channel by telling the bot to give flags
+(if it has correct flags), change password of the account and everything
 else what you do with network services.
 
 ### 4. Web page with special characters in \<title\> can be used to send DCC/CTCP commands.
 
-This doesn't mean only things like CTCP actions (also known as /me), 
-but known problems with old routers ( `FF ? DCC SEND “ff???f??????????????” 0 0 0` ) 
-which make them reconnect to the internet.
+This doesn't mean only things like CTCP actions (also known as /me),
+but known problems with old routers
+( `FF ? DCC SEND “ff???f??????????????” 0 0 0` ) which make them reconnect
+to the internet.
 
 Usage:
 
@@ -93,39 +79,39 @@ Usage:
 * [#supybot](ircs://chat.freenode.net:6697/#supybot)
 
 
-The first issue has been also used to take down some of 
-[Ubuntu IRC bots](https://wiki.ubuntu.com/IRC/Bots) several times. 
+The first issue has been also used to take down some of
+[Ubuntu IRC bots](https://wiki.ubuntu.com/IRC/Bots) several times.
 At least UbotX (I don't remember the number) and meetingology.
 
-Some of these issues are fixed in git repository, but most people aren't 
-using it. If you wish to start using it, please scroll down to 
-installation instructions lower this page even though [Limnoria] and 
+Some of these issues are fixed in git repository, but most people aren't
+using it. If you wish to start using it, please scroll down to
+installation instructions lower this page even though [Limnoria] and
 [gribble] are more recommended.
 
 ### How to avoid them?
 
-You can add anticapability for these commands using 
-`owner defaultcapability`, but that is only a temporary solution. 
+You can add anticapability for these commands using
+`owner defaultcapability`, but that is only a temporary solution.
 There can also be other issues.
 
-There are also two active Supybot forks, known as [Limnoria] and 
-[Gribble], which are actively developed and have fixed these issues. 
+There are also two active Supybot forks, known as [Limnoria] and
+[Gribble], which are actively developed and have fixed these issues.
 If you want permanent solution, you should install either of them.
 
 I recommend [Limnoria]
 * it seems to be more actively developed.
     * (activity of [Gribble] isn't announced anywhere)
-* it has additional 
+* it has additional
     * commands
     * translations support
         * plugins
-            * [PluginDownloader], which makes installing of 
+            * [PluginDownloader], which makes installing of
             3rd party plugins easy.
         * NickAuth
             * Allows identifying to the bot using NickServ account.
     * all changes of [Gribble].
-        * Conditional & MessageParser 
-* [Limnoria also supports SASL and CertFP], which are methods to 
+        * Conditional & MessageParser
+* [Limnoria also supports SASL and CertFP], which are methods to
 [identify to services automatically.](https://mkaysi.github.io/pages/external/identifying.html)
 
 ## Interesting things
@@ -210,8 +196,7 @@ sudo python3 get-pip.py
 
 if `curl -LO` doesn't work, try replacing it with `wget`.
 
-<hr/>
-[Changelog of this page.](https://github.com/Mkaysi/Limnoria/commits/gh-pages/Supybot.html)
-<hr/>
-</body>
-</html>
+* * * * *
+
+[Changelog of this page.](https://github.com/Mikaela/limnoria/commits/gh-pages/Supybot.md)
+* * * * *
