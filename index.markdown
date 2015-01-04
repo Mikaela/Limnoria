@@ -14,4 +14,4 @@ are looking for official sites, they are here:
 
 If you cannot find what you are looking for from them, please come to IRC 
 and ask. The Support channels are
-[#supybot,#limnoria on chat.freenode.net](ircs://chat.freenode.net:6697/#supybot,#limnoria)
+[#supybot,#limnoria on chat.freenode.net](ircs://chat.freenode.net:6697/%23supybot%2c%23limnoria)
