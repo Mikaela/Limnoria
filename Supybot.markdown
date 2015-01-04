@@ -121,12 +121,10 @@ There are also two active Supybot forks, known as [Limnoria] and
 [Gribble], which are actively developed and have fixed these issues.
 If you want permanent solution, you should install either of them.
 
-## Interesting things
+## Possibly interesting links
 
 * [Comparsion of commit activity between Limnoria, Gribble and Supybot](https://www.openhub.net/p/compare?project_0=Limnoria&project_1=Gribble%3A+Support+Bottie&project_2=Supybot).
 * [Gribble's modifications to stock Supybot](https://sourceforge.net/p/gribble/wiki/Gribble_Project_Git_Repository/)
-    * SourceForge and that link are a little broken, when they are moved 
-    elsewhere, please remove this notice!
 * [Limnoria's modifications to Gribble.](https://github.com/ProgVal/Limnoria/wiki/LGC) 
     * Features of Gribble are fully merged to Limnoria.
 
