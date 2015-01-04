@@ -123,3 +123,9 @@ Your current botname.conf is **100% compatible with forks**.
 
 *This section has been removed in order to not duplicate
 [Limnoria's documentation.](http://doc.supybot.aperio.fr/en/latest/use/install.html)*
+
+* * * * *
+
+Do you know issue that isn't mentioned here? If it's not already reported,
+please report it on [Limnoria's issue tracker.](https://github.com/ProgVal/Limnoria/issues)
+If it's known, but just not reported here, [please feel free to add it.](https://github.com/Mikaela/limnoria/edit/gh-pages/Supybot.markdown)
