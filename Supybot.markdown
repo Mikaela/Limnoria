@@ -25,6 +25,8 @@ where ! is the prefix character.
 Misc is loaded by default and cannot be unloaded without modifying the
 config.
 
+* [Limnoria issue #157](https://github.com/ProgVal/Limnoria/issues/157)
+    * Fixing commits:  [3526d5d](https://github.com/ProgVal/Limnoria/commit/3526d5dabf587457a43af8bee8d4db21986e8222) & [e11dc28](https://github.com/ProgVal/Limnoria/commit/e11dc28025de877b1b6cf059013eef88337b7e44)
 * [Ubuntu bug #996947](https://bugs.launchpad.net/ubuntu/+source/supybot/+bug/996947)
 * [Debian bug #672214](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=672214)
 
@@ -42,6 +44,8 @@ For example:
 This requires Math plugin which comes with Supybot, but isn't load by 
 default.
 
+* [Limnoria issue #354](https://github.com/ProgVal/Limnoria/issues/354)
+    * Fixing commit: [695078e](https://github.com/ProgVal/Limnoria/commit/695078edeb91e5ff1eec728fedf0e0c27b55c505)
 * [Ubuntu bug #996950](https://bugs.launchpad.net/ubuntu/+source/supybot/+bug/996950)
 * [Debian bug 672215](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=672215)
 
@@ -54,6 +58,9 @@ What does this mean? Anyone can tell the bot to ghost someone else on same
 account, take over a channel by telling the bot to give flags
 (if it has correct flags), change password of the account and everything
 else what you do with network services.
+
+* *This was only reported at IRC and I am unable to find issue report
+or fixing commit. ~~Mikaela on 2015-01-04.*
 
 ### 4. Web page with special characters in \<title\> can be used to send DCC/CTCP commands.
 
@@ -69,16 +76,27 @@ Usage:
 !web fetch <malicious.page.here>
 ```
 
+*This was only reported at IRC and I am unable to find issue report
+ or fixing commit. ~~Mikaela on 2015-01-04.*
+
+
 ### 5. Web Titlte/Fetch can be used for DoS
 
 They are vulnerable to queries to servers which have custom headers
 which can lead to DoS.
+
+*This was only reported at IRC and I am unable to find issue report
+or fixing commit. ~~Mikaela on 2015-01-04.*
+
 
 ### 6. QuoteGrabs grab command also works in PM
 
 and can grab private content such as `user register` or `user identify` or
 with the case of owner possibly NickServ passwords and others not so nice
 things.
+
+*It appears this issue was only reported at IRC.*
+    * Fixing commit: [a3346343679f3bdf8c77d9efb5a2097e215d51df](https://github.com/ProgVal/Limnoria/commit/a3346343679f3bdf8c77d9efb5a2097e215d51df)
 
 ### Are these issues publicly known?
 
