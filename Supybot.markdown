@@ -95,7 +95,7 @@ and can grab private content such as `user register` or `user identify` or
 with the case of owner possibly NickServ passwords and others not so nice
 things.
 
-*It appears this issue was only reported at IRC.*
+* *It appears this issue was only reported at IRC.*
     * Fixing commit: [a3346343679f3bdf8c77d9efb5a2097e215d51df](https://github.com/ProgVal/Limnoria/commit/a3346343679f3bdf8c77d9efb5a2097e215d51df)
 
 ### Are these issues publicly known?
