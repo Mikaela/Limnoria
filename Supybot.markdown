@@ -10,9 +10,6 @@ has multiple security issues documented here. This version is available
 from Debian repositories, Ubuntu repositories and repositories of many 
 other Linux distributions.
 
-**Note: Development has moved from SourceForge to GitHub so I won't refer 
-to the old SF page.**
-
 ## The issues of 0.83.4.1.
 
 ### 1. Anyone can crash it and computer where it's running on
@@ -28,6 +25,9 @@ where ! is the prefix character.
 Misc is loaded by default and cannot be unloaded without modifying the
 config.
 
+* [Ubuntu bug #996947](https://bugs.launchpad.net/ubuntu/+source/supybot/+bug/996947)
+* [Debian bug #672214](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=672214)
+
 ### 2. The previous wasn't the only way to do this
 
 Everyone can also make the bot count an equation, which brings it and the
@@ -41,6 +41,9 @@ For example:
 
 This requires Math plugin which comes with Supybot, but isn't load by 
 default.
+
+* [Ubuntu bug #996950](https://bugs.launchpad.net/ubuntu/+source/supybot/+bug/996950)
+* [Debian bug 672215](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=672215)
 
 ### 3. Anyone can access network services via the bot.
 
@@ -66,18 +69,20 @@ Usage:
 !web fetch <malicious.page.here>
 ```
 
+### 5. Web Titlte/Fetch can be used for DoS
+
+They are vulnerable to queries to servers which have custom headers
+which can lead to DoS.
+
+### 6. QuoteGrabs grab command also works in PM
+
+and can grab private content such as `user register` or `user identify` or
+with the case of owner possibly NickServ passwords and others not so nice
+things.
+
 ### Are these issues publicly known?
 
-**Of course they are.** They have been reported to
-
-* [Ubuntu](https://ubuntu.com)
-    * [issue 1](http://pad.lv/996947])
-    * [issue 2](http://pad.lv/996950)
-* [Debian](https://debian.org/)
-    * [issue 1](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=672214)
-    * [issue 2](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=672215)
-* [#supybot](ircs://chat.freenode.net:6697/#supybot)
-
+**Of course they are.** Issue reports are below the actual issues.
 
 The first issue has been also used to take down some of
 [Ubuntu IRC bots](https://wiki.ubuntu.com/IRC/Bots) several times.
@@ -98,22 +103,6 @@ There are also two active Supybot forks, known as [Limnoria] and
 [Gribble], which are actively developed and have fixed these issues.
 If you want permanent solution, you should install either of them.
 
-I recommend [Limnoria]
-* it seems to be more actively developed.
-    * (activity of [Gribble] isn't announced anywhere)
-* it has additional
-    * commands
-    * translations support
-        * plugins
-            * [PluginDownloader], which makes installing of
-            3rd party plugins easy.
-        * NickAuth
-            * Allows identifying to the bot using NickServ account.
-    * all changes of [Gribble].
-        * Conditional & MessageParser
-* [Limnoria also supports SASL and CertFP], which are methods to
-[identify to services automatically.](https://mkaysi.github.io/pages/external/identifying.html)
-
 ## Interesting things
 
 * [Comparsion of commit activity between Limnoria, Gribble and Supybot](https://www.openhub.net/p/compare?project_0=Limnoria&project_1=Gribble%3A+Support+Bottie&project_2=Supybot).
@@ -129,69 +118,8 @@ Your current botname.conf is **100% compatible with forks**.
 
 [Limnoria]:https://github.com/ProgVal/Limnoria
 [Gribble]:http://github.com/nanotube/supybot_fixes
-[PluginDownloader]:https://github.com/ProgVal/Limnoria/tree/master/plugins/PluginDownloader
 
 ## Installing forks
 
-### For all of them.
-
-You should install [pip] (usually python-pip and python3-pip in
-repositories) and [git].
-
-Windows users should also install [pip] and [msysgit] and in [msysgit] 
-select to run **unix tools in PATH**.
-
-Note: pip is included with Python =< 3.4! Python 3 is only supported by 
-Limnoria.
-
-For **rootless installation**, please see 
-[Limnoria's documentation.](http://supybot.aperio.fr/doc/use/install.html#local-installation) which you should be able to modify to install stock 
-Supybot or gribble with the information below.
-
-If you don't have sudo, please simply remove it from beginnings of lines 
-and run the commands as root or Administrator.
-
-[git]:http://git-scm.com/
-[pip]:http://pip.readthedocs.org/en/latest/reference/pythonpip_install.html
-[msysgit]:https://msysgit.github.io/
-
-### Supybot
-
-**Not recommended as it's not actively developed.**
-
-```
-sudo python -m pip install git+https://github.com/supybot/supybot.git --upgrade
-```
-
-### gribble
-
-Less actively developed than Limnoria and doesn't support Python 3.
-
-```
-sudo python -m pip install git+https://github.com/nanotube/supybot_fixes.git --upgrade
-```
-
-### Limnoria
-
-At the time of writing, the most active Supybot fork which includes 
-embedded HTTPd for plugins needing it, supports other languages than 
-English and also runs with Python 3.
-
-The first command installs requirements of Limnoria and the second 
-Limnoria itself. Only Limnoria has requirements.txt file at the moment.
-
-```
-sudo python3 -m pip install -r https://raw.githubusercontent.com/ProgVal/Limnoria/master/requirements.txt --upgrade
-sudo python3 -m pip install git+https://github.com/ProgVal/Limnoria.git@master --upgrade
-```
-
-#### python3 -m pip
-
-If you don't have pip for Python3 you can
-
-```
-curl -LO https://bootstrap.pypa.io/get-pip.py
-sudo python3 get-pip.py
-```
-
-if `curl -LO` doesn't work, try replacing it with `wget`.
+*This section has been removed in order to not duplicate
+[Limnoria's documentation.](http://doc.supybot.aperio.fr/en/latest/use/install.html)*
