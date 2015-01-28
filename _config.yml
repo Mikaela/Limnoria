@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Mikaela's Supybot site where nowadays the only content is security issues
   of stock Supybot.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://supybot.mikaela.info/" # the base hostname & protocol for your site
+url: "https://supybot.mikaela.info/" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
 github_username:  Mikaela
 
