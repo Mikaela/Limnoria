@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://supybot.mikaela.info/sitemap.xml

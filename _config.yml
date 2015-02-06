@@ -24,3 +24,4 @@ gems:
     - jekyll-sitemap
 sitemap:
     file: "/sitemap.xml"
+include: [robots.txt]
