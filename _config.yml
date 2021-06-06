@@ -9,11 +9,6 @@ url: "https://supybot.mikaela.info/" # the base hostname & protocol for your sit
 #twitter_username: jekyllrb
 github_username:  Mikaela
 
-# Build settings
-markdown: redcarpet
-redcarpet:
- extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "lax_spacing", "space_after_headers", "superscript"]
-
 # Custom settings
 timezone: Etc/UTC
 encoding: utf-8
