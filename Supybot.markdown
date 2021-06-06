@@ -4,11 +4,13 @@ title: Security issues
 permalink: /Supybot.html
 ---
 
-All activity happens in git repository of Supybot nowadays and it happens 
-seldomly. The latest version, which was released in 2009 is 0.83.4.1 
-has multiple security issues documented here. This version is available 
-from Debian repositories, Ubuntu repositories and repositories of many 
-other Linux distributions.
+Supybot git repository was declared dead on 2018-05-10 and archived
+on GitHub. [v0.84.0 was the last release at that time](https://github.com/Supybot/Supybot/releases/tag/v0.84.0).
+0.83.4.1 used to be a very common release available through several Linux
+distributions for years and thus I made this page, which I guess is now
+available more of for historical reasons.
+
+***WARNING: most of the content originates from 2014!***
 
 ## The issues of 0.83.4.1.
 

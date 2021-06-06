@@ -2,6 +2,8 @@
 layout: default
 ---
 
+***WARNING: most of the content on this site originates from 2014!***
+
 Welcome to Mikaela's Supybot pages.
 
 This site isn't official and won't help with most of issues. In case you
