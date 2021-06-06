@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+### WARNING! I would recommend using systemd for this instead, refer to
+### https://docs.limnoria.net/use/supybot-botchk.html#systemd-service !
+
 ## This script executes supybot-botchk and sets correct environment.
 
 ## Example entries for crontab:
