@@ -6,4 +6,4 @@ which is the source of <https://supybot.mikaela.info/>.
 **testing** which will be synced with [ProgVal/Limnoria] when needed. It
 is used as base for my changes which will be pull requested.
 
-[ProgVal/Limnoria]:https://github.com/ProgVal/Limnoria.git
+[ProgVal/Limnoria]: https://github.com/ProgVal/Limnoria.git

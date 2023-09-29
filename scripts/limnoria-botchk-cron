@@ -16,7 +16,7 @@ export LC_ALL=en_US.utf8
 export TZ="/usr/share/zoneinfo/UTC"
 
 ## Setting $PATH correctly so executing system commands work.
-## The easiest way to get this correct is probably to execute the command 
+## The easiest way to get this correct is probably to execute the command
 ## below
 #echo export PATH=$PATH
 export PATH=
@@ -34,4 +34,4 @@ $SB_BC_C_SUPYBOT_BOTCHK --botdir=$SB_BC_C_BOTDIR --pidfile=$SB_BC_C_PIDFILE --su
 ## To debug this script, add --verbose to the end while running in
 ## terminal.
 
-## vim : set ft=sh : 
+## vim : set ft=sh :
