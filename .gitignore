@@ -27,3 +27,4 @@ src/version.py
 _site
 .sass-cache
 vendor/
+.bundle
