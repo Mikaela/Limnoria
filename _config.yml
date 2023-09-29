@@ -7,16 +7,16 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://supybot.mikaela.info/" # the base hostname & protocol for your site
 #twitter_username: jekyllrb
-github_username:  Mikaela
+github_username: Mikaela
 
 # Custom settings
 timezone: Etc/UTC
 encoding: utf-8
-gems:
-    - jekyll-mentions
-    - jemoji
-    - jekyll-redirect-from
-    - jekyll-sitemap
+plugins:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
 sitemap:
-    file: "/sitemap.xml"
+  file: "/sitemap.xml"
 include: [robots.txt]
