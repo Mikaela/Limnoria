@@ -26,3 +26,4 @@ test-logs/
 src/version.py
 _site
 .sass-cache
+vendor/
