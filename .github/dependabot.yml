@@ -19,3 +19,12 @@ updates:
       github-actions:
         patterns:
           - "*"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    groups:
+      npm:
+        patterns:
+          - "*"

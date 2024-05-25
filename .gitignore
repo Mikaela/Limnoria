@@ -28,3 +28,4 @@ _site
 .sass-cache
 vendor/
 .bundle
+node_modules/
