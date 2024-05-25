@@ -56,9 +56,7 @@ notices from specific hostmask.
 
 ## WeeChat
 
-```
-/filter add relaybotnotices * irc_notice+nick_RelayBot *
-```
+`/filter add relaybotnotices * irc_notice+nick_RelayBot *`
 
 This creates a new filter with the name "relaybotnotices" which filters
 all notices from the nickname "RelayBot".

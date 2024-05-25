@@ -18,9 +18,7 @@ available more of for historical reasons.
 
 And this is very easy. Just run the command
 
-```
-!misc last --regexp m/(.*\w){512}/
-```
+`!misc last --regexp m/(.*\w){512}/`
 
 where ! is the prefix character.
 
@@ -39,9 +37,7 @@ host computer down.
 
 For example:
 
-```
-!math calc factorial(999999)
-```
+`!math calc factorial(999999)`
 
 This requires Math plugin which comes with Supybot, but isn't load by
 default.
@@ -73,10 +69,8 @@ to the internet.
 
 Usage:
 
-```
-!web title <malicious.page.here>
-!web fetch <malicious.page.here>
-```
+- `!web title <malicious.page.here>`
+- `!web fetch <malicious.page.here>`
 
 _This was only reported at IRC and I am unable to find issue report
 or fixing commit. ~~Mikaela on 2015-01-04._
@@ -130,7 +124,7 @@ If you want permanent solution, you should install either of them.
 
 Your current botname.conf is **100% compatible with forks**.
 
-[Join Supybot channels on freenode!](ircs://chat.freenode.net:6697/#supybot,#gribble,#limnoria)
+[Join Supybot channels on LiberaChat!](ircs://irc.libera.chat:6697/#supybot,#gribble,#limnoria)
 
 [Limnoria]: https://github.com/ProgVal/Limnoria
 [Gribble]: http://github.com/nanotube/supybot_fixes
