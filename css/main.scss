@@ -6,20 +6,35 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
+$base-font-family: "Liberation Sans", "Arimo", "Arial", sans-serif;
+$monospace-font-family: "Liberation Mono", "Cousine", "Courier New", monospace;
+//$base-font-size:   16px;
+$base-font-size:   revert;
+//$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  revert;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+//
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$text-color:       revert;
+$background-color: revert;
+$brand-color:      revert;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+$grey-color:       revert;
+$grey-color-light: revert;
+$grey-color-dark:  revert;
 
 // Width of the content area
 $content-width:    800px;

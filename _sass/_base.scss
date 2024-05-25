@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark light;
+}
+
 /**
  * Reset some basic elements
  */
@@ -90,15 +94,16 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $brand-color;
-    text-decoration: none;
+    //text-decoration: none;
+    text-decoration: underline;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        //color: darken($brand-color, 15%);
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        //text-decoration: underline;
     }
 }
 
@@ -127,10 +132,11 @@ blockquote {
  */
 pre,
 code {
+    font-family: $monospace-font-family;
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid; //$grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: revert; //#eef;
 }
 
 code {
