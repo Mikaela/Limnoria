@@ -65,3 +65,23 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// Overrides for dark themes
+@media (prefers-color-scheme: dark) {
+  .site-nav {
+    color-scheme: only dark !important;
+    color: #ffffff !important;
+    background-color: #1c1b22 !important;
+    border: 1px solid #ffffff !important;
+  }
+}
+
+// Overrides for light themes
+@media (prefers-color-scheme: light) {
+  .site-nav {
+    color-scheme: only light !important;
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #000000 !important;
+  }
+}
