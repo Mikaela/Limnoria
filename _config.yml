@@ -1,4 +1,5 @@
 # Site settings
+theme: minima
 title: Mikaela's supybot site
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -10,6 +11,7 @@ url: "https://supybot.mikaela.info/" # the base hostname & protocol for your sit
 github_username: Mikaela
 
 # Custom settings
+lang: en
 timezone: Etc/UTC
 encoding: utf-8
 plugins:
