@@ -1,24 +1,35 @@
-# Site settings
 theme: minima
-title: Mikaela's supybot site
-#email: your-email@domain.com
+title: Mikaela's Supybot site
+tagline: Things official documentation may not tell you
+author:
+  name: "Aminda Suomalainen"
+  url: "https://aminda.eu/"
 description: > # this means to ignore newlines until "baseurl:"
   Mikaela's Supybot site where nowadays the only content is security issues
   of stock Supybot.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://supybot.mikaela.info/" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
 github_username: Mikaela
-
-# Custom settings
 lang: en
 timezone: Etc/UTC
 encoding: utf-8
 plugins:
-  - jekyll-mentions
-  - jemoji
+  #  - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-seo-tag
 sitemap:
   file: "/sitemap.xml"
 include: [robots.txt]
+icon: https://github.com/ProgVal/Supybot-website/raw/master/static/logo.png
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+#webmaster_verifications:
+#google:
+#bing:
+defaults:
+  - scope:
+      path: "*"
+    values:
+      image: https://github.com/ProgVal/Supybot-website/raw/master/static/logo.png
