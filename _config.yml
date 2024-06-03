@@ -21,6 +21,7 @@ plugins:
 sitemap:
   file: "/sitemap.xml"
 include: [robots.txt]
+robots: nofollow, noai
 icon: https://github.com/ProgVal/Supybot-website/raw/master/static/logo.png
 markdown: kramdown
 kramdown:

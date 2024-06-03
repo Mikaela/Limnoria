@@ -5,7 +5,8 @@
   <!---->
   {%- seo -%}
   <!---->
+  <meta name="robots" content="{% if page.robots %}{{ page.robots }} {% else %}{{ site.robots }} {% endif %}">
   <link rel="icon" href="https://github.com/ProgVal/Supybot-website/raw/master/static/logo.png">
   <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
