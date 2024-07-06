@@ -1,2 +1,4 @@
+# @format
+
 language: ruby
 script: "bundle exec jekyll build"
