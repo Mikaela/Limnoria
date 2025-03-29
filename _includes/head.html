@@ -7,6 +7,9 @@
   <!---->
   <meta name="robots" content="{% if page.robots %}{{ page.robots }} {% else %}{{ site.robots }} {% endif %}">
   <link rel="icon" href="https://github.com/ProgVal/Supybot-website/raw/master/static/logo.png">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ffb700">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fdfdfd">
   <link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
